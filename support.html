@@ -47,7 +47,8 @@
   <dd>全部保存在你自己的设备上，并已加密。本应用没有服务器、没有账号，数据<strong>不会上传</strong>，我们也看不到。详见<a href="./privacy.html">隐私政策</a>。</dd>
 
   <dt>忘记密码怎么办？</dt>
-  <dd>用你在首次设置时抄下的 <strong>16 位恢复码</strong>重设密码。恢复码只展示那一次，不会上传，我们没有副本——<strong>若密码和恢复码同时遗失，任何人都无法解开账本</strong>。请务必把恢复码抄在安全的地方。</dd>
+  <dd>用你在首次设置时抄下的 <strong>16 位恢复码</strong>重设密码。恢复码只展示那一次，不会上传，我们没有副本——<strong>若密码和恢复码同时遗失，任何人都无法解开账本</strong>（包括开发者）。请务必把恢复码抄在安全的地方。<br>
+  <strong>两样都遗失了，还能用这个 App 吗？</strong>能，但要从头开始：删除本应用再重新安装，即可用新密码建一个新账本——<strong>原来的账目会全部丢失、无法找回</strong>。</dd>
 
   <dt>换手机了，数据怎么带过去？</dt>
   <dd>在旧设备用「导出加密备份」生成备份文件，转移到新设备后用「从备份恢复」导入。备份文件全程加密，用你的密码或恢复码都能打开。</dd>
@@ -56,7 +57,29 @@
   <dd>应用内可以删除账户（该账户下没有流水时才删得掉）。要清空全部数据，<strong>直接删除本应用</strong>即可——iOS 会一并删除它在设备上的所有数据，包括加密账本与应用文件夹内的备份文件。你此前另存到别处的备份副本不在其中，需要你自行删除。</dd>
 
   <dt>这个 App 需要什么权限？</dt>
-  <dd>不需要任何系统权限。它只读写属于自己的应用沙盒目录，不访问相机、照片、位置或通讯录。</dd>
+  <dd>默认不请求任何系统权限。只有当你主动使用「拍照/截图识别」去识别账单图片时，系统才会询问是否允许访问相册或相机——你可以拒绝，拒绝后其余功能不受影响。图片只在你的设备上处理，不会上传，也不会被保存进 App。除此之外它只读写属于自己的应用沙盒目录，不访问位置、通讯录、麦克风、日历或健康数据。</dd>
+</dl>
+
+<h2>购买与恢复</h2>
+<dl>
+  <dt>怎么恢复我已经买过的功能？</dt>
+  <dd>在应用内点「恢复购买」按钮——它<strong>需要你自己点一下</strong>，不会在启动时自动运行，也不会自动弹出 Apple 登录框。点击后会明确告诉你是哪一种结果：
+    <ul>
+      <li><strong>已恢复</strong>：找到了你的购买记录，高级功能立即可用。</li>
+      <li><strong>未找到可恢复的购买</strong>：当前登录的 Apple 账户名下没有本应用的购买记录。请先确认「设置 → App Store」里登录的是<strong>当初付款的那个 Apple 账户</strong>。</li>
+      <li><strong>Apple 登录或网络失败</strong>：这次没能问到 App Store（网络不通，或未登录 App Store）。<strong>这不代表购买丢失</strong>，联网后重试即可。</li>
+    </ul>
+    恢复购买不收费，也不需要再付一次钱。</dd>
+
+  <dt>换了新手机，买过的功能还在吗？</dt>
+  <dd>在。本应用的高级功能是<strong>一次性买断</strong>（非订阅），购买记录跟着你的 Apple 账户走，不跟设备走。在新手机上用<strong>同一个 Apple 账户</strong>登录 App Store，装好应用后点一次「恢复购买」即可。<br>
+  ⚠️ 请注意区分两件事：<strong>购买记录</strong>由 Apple 保管，换机后可恢复；<strong>你的账目数据</strong>只在旧手机上，必须自己用「导出加密备份 → 从备份恢复」带过去（见上方 FAQ）。买断不会帮你搬账本。</dd>
+
+  <dt>要退款找谁？</dt>
+  <dd>退款由 <strong>Apple 处理，不经过我们</strong>——我们既收不到你的付款信息，也无权代你退款。请到 <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> 用你的 Apple 账户提交，或在「设置 → 你的姓名 → 媒体与购买项目」里查询购买记录。如果你是因为功能不符合预期想退，欢迎顺手发邮件告诉我们原因。</dd>
+
+  <dt>没买 / 退款之后，我的账本会被锁住吗？</dt>
+  <dd><strong>不会。</strong>记账、查看账本、报表对账、导出与备份<strong>始终免费、永不设墙</strong>。购买解锁的只是「无限次数的拍照与截图识别」。即使购买失效或退款，你既有的账目、导出与备份仍然可读可用——我们不会把你的数据扣作人质。</dd>
 </dl>
 
 <h2>反馈与建议</h2>
@@ -80,7 +103,8 @@
   <dd>Everything stays encrypted on your own device. The app has no server and no accounts, so your data is <strong>never uploaded</strong> and we cannot see it. See our <a href="./privacy.html">Privacy Policy</a>.</dd>
 
   <dt>I forgot my password.</dt>
-  <dd>Use the <strong>16-character recovery code</strong> you wrote down during setup to reset your password. The code is shown only once, is never uploaded, and we keep no copy — <strong>if you lose both your password and your recovery code, no one can decrypt your ledger</strong>. Please keep it somewhere safe.</dd>
+  <dd>Use the <strong>16-character recovery code</strong> you wrote down during setup to reset your password. The code is shown only once, is never uploaded, and we keep no copy — <strong>if you lose both your password and your recovery code, no one can decrypt your ledger</strong> (not even the developer). Please keep it somewhere safe.<br>
+  <strong>Lost both — can I still use the app?</strong> Yes, but you have to start over: delete the app and reinstall it, then set a new password to create a fresh ledger — <strong>the old entries are gone for good and cannot be recovered</strong>.</dd>
 
   <dt>How do I move my data to a new phone?</dt>
   <dd>On the old device, use "Export encrypted backup". Transfer the file to the new device and use "Restore from backup". The backup stays encrypted throughout and opens with either your password or your recovery code.</dd>
@@ -89,7 +113,29 @@
   <dd>You can delete an account in-app (only while it has no transactions). To erase everything, simply <strong>delete the app</strong> — iOS removes all of its on-device data, including the encrypted ledger and any backup files inside the app's own folder. Backup copies you saved elsewhere must be deleted by you.</dd>
 
   <dt>What permissions does the app need?</dt>
-  <dd>None. It only reads and writes its own application sandbox, and does not access your camera, photos, location or contacts.</dd>
+  <dd>By default, none. Only when you actively use "Scan / photo recognition" to read a bill image does the system ask whether to allow access to your photo library or camera — you may decline, and every other feature keeps working. Images are processed only on your device; they are never uploaded and are never saved into the app. Apart from that it only reads and writes files inside its own sandbox directory, and does not access your location, contacts, microphone, calendar or health data.</dd>
+</dl>
+
+<h2>Purchases and restoring</h2>
+<dl>
+  <dt>How do I restore a feature I already bought?</dt>
+  <dd>Tap the "Restore purchases" button inside the app. <strong>You have to tap it yourself</strong> — it never runs automatically at launch and never pops up an Apple sign-in on its own. It then tells you exactly which of three things happened:
+    <ul>
+      <li><strong>Restored</strong> — your purchase was found and premium features are available immediately.</li>
+      <li><strong>No restorable purchase found</strong> — the Apple Account currently signed in has no purchase of this app. Check that Settings → App Store is signed in with <strong>the Apple Account you originally paid with</strong>.</li>
+      <li><strong>Apple sign-in or network failed</strong> — we could not reach the App Store this time (no network, or not signed in). <strong>This does not mean your purchase is lost</strong>; just try again once you are online.</li>
+    </ul>
+    Restoring is free and never charges you a second time.</dd>
+
+  <dt>I got a new phone. Do I keep what I bought?</dt>
+  <dd>Yes. Premium features are a <strong>one-time purchase</strong> (not a subscription) and are tied to your Apple Account, not to the device. Sign in to the App Store on the new phone with <strong>the same Apple Account</strong>, install the app, and tap "Restore purchases" once.<br>
+  ⚠️ Two separate things: your <strong>purchase</strong> is held by Apple and can be restored; your <strong>ledger data</strong> lives only on the old phone and must be moved by you via "Export encrypted backup" → "Restore from backup" (see the FAQ above). Buying does not move your ledger.</dd>
+
+  <dt>Who do I ask for a refund?</dt>
+  <dd>Refunds are <strong>handled by Apple, not by us</strong> — we never receive your payment details and cannot issue a refund on your behalf. Go to <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> and sign in with your Apple Account, or check Settings → your name → Media &amp; Purchases. If you are refunding because the feature did not do what you expected, we would appreciate an email telling us why.</dd>
+
+  <dt>If I do not buy, or I get a refund, is my ledger locked?</dt>
+  <dd><strong>No.</strong> Bookkeeping, reading your ledger, reports, reconciliation, export and backup are <strong>always free and never gated</strong>. The purchase unlocks only unlimited photo and screenshot recognition. Even if the purchase lapses or is refunded, your existing records, exports and backups stay readable and usable — we do not hold your data hostage.</dd>
 </dl>
 
 <h2>Feedback</h2>
